@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HomePageComponent from './components/HomePageComponent';
+import PeoplePageComponent from './components/PeoplePageComponent';
 import './App.css';
 
 class App extends Component {
@@ -12,8 +13,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HomePageComponent />
-        <section className = "PeoplePage"></section>
+        <HomePageComponent onScrollClick = {title => this.onScrollClick(title)}/>
+        <PeoplePageComponent onScrollClick = {title => this.onScrollClick(title)}/>
         <section className = "WorkPage"></section>
         <section className = "LaunchPage"></section>
       </div>

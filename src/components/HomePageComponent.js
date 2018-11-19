@@ -23,7 +23,7 @@ const HomePageComponent = (props) => (
       </nav>
     </header>
     <main className = "HomePageMainContent"></main>
-    <ContentScroller title = "who we are" onClick = {(title) => this.onScrollClick(title)}/>
+    <ContentScroller title = "who we are" onClick = {(title) => props.onScrollClick(title)}/>
   </section>
 )
 
