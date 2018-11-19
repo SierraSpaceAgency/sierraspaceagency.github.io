@@ -1,3 +1,80 @@
 .App {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.HomePage {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./images/sierra-mountains.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.SSALogo {
+  width: 36px;
+  height: auto;
+  margin-right: 16px;
+  margin-left: 18px;
+}
+
+.SSATitle {
+  font-size: 24px;
+  color: #676f95;
+  flex: 1;
+}
+
+.NavLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.NavLink {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 18px;
+  cursor: pointer;
+}
+
+.NavLinkText {
+  font-size: 22px;
+  color: #676f95;
   text-align: center;
+}
+
+.HomePageMainContent {
+  width: 100%;
+  flex: 1;
+}
+
+.PeoplePage {
+
+}
+
+.WorkPage {
+
+}
+
+.LaunchPage {
+
 }

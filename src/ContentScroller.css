@@ -1,0 +1,29 @@
+.ContentScroller {
+  align-self: baseline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.ContentScrollerFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ContentScrollerTitle {
+  color: #929cc4;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.ContentScrollerImage {
+  width: 48px;
+  height: auto;
+}
