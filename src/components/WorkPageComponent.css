@@ -1,0 +1,13 @@
+.WorkPage {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6c8c9;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.WorkPageMainContent {
+  width: 100%;
+  flex: 1;
+}
