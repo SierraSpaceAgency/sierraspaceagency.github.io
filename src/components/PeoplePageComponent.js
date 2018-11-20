@@ -1,11 +1,15 @@
 import React from 'react';
-import ContentScroller from './ContentScroller';
 import './PeoplePageComponent.css';
 
 const PeoplePageComponent = props => (
   <section className = "PeoplePage">
     <div className = "PeoplePageMainContent"></div>
-    <ContentScroller title = "what we do" onClick = {(title) => props.onScrollClick(title)}/>
+    <footer className = "ContentScrollerFooter">
+      <div className = "ContentScroller" onClick = {() => props.onScrollClick("what we do")}>
+        <p className = "ContentScrollerTitle">{"what we do"}</p>
+        <img className = "ContentScrollerImage" src = "arrow-1.png" alt = "Scroll down"/>
+      </div>
+    </footer>
   </section>
 )
 

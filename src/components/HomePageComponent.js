@@ -1,5 +1,4 @@
 import React from 'react';
-import ContentScroller from './ContentScroller';
 import './HomePageComponent.css';
 
 const HomePageComponent = (props) => (
@@ -23,7 +22,12 @@ const HomePageComponent = (props) => (
       </nav>
     </header>
     <main className = "HomePageMainContent"></main>
-    <ContentScroller title = "who we are" onClick = {(title) => props.onScrollClick(title)}/>
+    <footer className = "ContentScrollerFooter">
+      <div className = "ContentScroller" onClick = {() => props.onScrollClick("who we are")}>
+        <p className = "ContentScrollerTitle">{"who we are"}</p>
+        <img className = "ContentScrollerImage" src = "arrow-1.png" alt = "Scroll down"/>
+      </div>
+    </footer>
   </section>
 )
 

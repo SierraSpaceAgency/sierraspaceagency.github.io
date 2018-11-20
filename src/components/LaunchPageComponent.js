@@ -1,5 +1,4 @@
 import React from 'react';
-import ContentScroller from './ContentScroller';
 import './LaunchPageComponent.css';
 
 const LaunchPageComponent = props => (
@@ -8,7 +7,12 @@ const LaunchPageComponent = props => (
       <p className = "LaunchPageMainContentTitle">Need a great app?</p>
       <p className = "LaunchPageMainContentText">Make it happen</p>
     </main>
-    <ContentScroller title =  "launch something" onClick = {(title) => props.onScrollClick(props.title)}/>
+    <footer className = "ContentScrollerFooter">
+      <div className = "ContentScroller" onClick = {() => props.onScrollClick("launch somethnig")}>
+        <p className = "ContentScrollerTitle">{"launch something"}</p>
+        <img className = "ContentScrollerImage" src = "arrow-1.png" alt = "Scroll down"/>
+      </div>
+    </footer>
     <img className = "LaunchPageMountainRange" src = "mountain-range.png"/>
   </section>
 )
