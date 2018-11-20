@@ -4,37 +4,57 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  padding: 80px;
+  align-items: center;
 }
 
 .PeoplePageTextContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 120px;
+  margin-bottom: 60px;
 }
 
 .PeoplePageTitle {
   color: #FFFFFF;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
+  margin: 0;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .PeoplePageText {
   color: #FFFFFF;
   font-size: 20px;
+  text-align: center;
 }
 
-.PeoplePageCarouselContainer {
-  margin-bottom: 64px;
+.PeopleList {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 0;
+  max-width: 750px;
 }
 
-.PeoplePageCarouselItemContainer {
+.Person {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
 }
 
-.PeoplePageCarouselItem {
-  width: 12px;
-  height: 12px;
+.PersonImage {
+  width: 150px;
+  height: 150px;
+  background-color: #FAFAFA;
   border-radius: 50%;
-  background-color: pink;
+  box-shadow: 0 1px 2px black;
+  object-fit: cover;
 }

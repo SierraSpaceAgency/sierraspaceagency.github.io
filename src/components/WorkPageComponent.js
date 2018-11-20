@@ -18,17 +18,17 @@ const WorkPageComponent = props => {
 
   return (
     <section className = "WorkPage">
-      <div className = "PeoplePageTextContent">
-        <p className = "PeoplePageTitle">What We Do</p>
-        <p className = "PeoplePageText">We build fun apps for big brands. Check out some of our work.</p>
+      <div className = "WorkPageTextContent">
+        <p className = "WorkPageTitle">What We Do</p>
+        <p className = "WorkPageText">We build fun apps for big brands. Check out some of our work.</p>
       </div>
-      <div className = "PeoplePageCarouselContainer">
+      <div className = "WorkPageCarouselContainer">
         <Slider {...settings}>
-          <div><div className = "PeoplePageCarouselItem"></div></div>
-          <div><div className = "PeoplePageCarouselItem"></div></div>
-          <div><div className = "PeoplePageCarouselItem"></div></div>
-          <div><div className = "PeoplePageCarouselItem"></div></div>
-          <div><div className = "PeoplePageCarouselItem"></div></div>
+          <div><div className = "WorkPageCarouselItem"></div></div>
+          <div><div className = "WorkPageCarouselItem"></div></div>
+          <div><div className = "WorkPageCarouselItem"></div></div>
+          <div><div className = "WorkPageCarouselItem"></div></div>
+          <div><div className = "WorkPageCarouselItem"></div></div>
         </Slider>
       </div>
     </section>
