@@ -5,7 +5,7 @@ const WorkPageComponent = props => (
   <section className = "WorkPage">
     <div className = "WorkPageMainContent"></div>
     <footer className = "ContentScrollerFooter">
-      <div className = "ContentScroller" onClick = {() => props.onScrollClick("how we do it")}>
+      <div className = "ContentScroller" onClick = {() => props.onScrollClick("launch")}>
         <p className = "ContentScrollerTitle">{"how we do it"}</p>
         <img className = "ContentScrollerImage" src = "arrow-1.png" alt = "Scroll down"/>
       </div>

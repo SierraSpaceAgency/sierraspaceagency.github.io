@@ -12,16 +12,16 @@ class App extends Component {
     console.log(`Clicked ${title}`);
 
     switch(title) {
-      case 'launch something':
+      case 'home':
         this.homePage.scrollIntoView({ block: "start", behavior: "smooth" });
         break;
-      case 'who we are':
+      case 'people':
         this.peoplePage.scrollIntoView({ block: "start", behavior: "smooth" });
         break;
-      case 'what we do':
+      case 'work':
         this.workPage.scrollIntoView({ block: "start", behavior: "smooth" });
         break;
-      case 'how we do it':
+      case 'launch':
         this.launchPage.scrollIntoView({ block: "start", behavior: "smooth" });
         break;
     }

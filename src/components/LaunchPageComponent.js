@@ -8,7 +8,7 @@ const LaunchPageComponent = props => (
       <p className = "LaunchPageMainContentText">Make it happen</p>
     </main>
     <footer className = "ContentScrollerFooter">
-      <div className = "ContentScroller ContentScroller--Launch" onClick = {() => props.onScrollClick("launch something")}>
+      <div className = "ContentScroller ContentScroller--Launch" onClick = {() => props.onScrollClick("launch")}>
         <img className = "ContentScrollerImage ContentScrollerImage--Launch" src = "arrow-launch.png" alt = "Scroll down"/>
         <p className = "ContentScrollerTitle ContentScrollerTitle--Launch">{"launch something"}</p>
       </div>
