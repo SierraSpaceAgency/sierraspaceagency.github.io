@@ -28,7 +28,7 @@ p {
 }
 
 .SSATitle {
-  font-size: 24px;
+  font-size: 22px;
   color: #676f95;
   flex: 1;
 }
@@ -46,12 +46,12 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 18px;
+  padding: 18px 16px;
   cursor: pointer;
 }
 
 .NavLinkText {
-  font-size: 22px;
+  font-size: 20px;
   color: #676f95;
   text-align: center;
 }
