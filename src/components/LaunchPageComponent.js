@@ -4,7 +4,7 @@ import './LaunchPageComponent.css';
 const LaunchPageComponent = props => (
   <section className = "LaunchPage">
     <main className = "LaunchPageMainContent">
-      <p className = "LaunchPageMainContentTitle">Need a great app?</p>
+      <p className = "LaunchPageMainContentTitle">Everyone has ideas</p>
       <p className = "LaunchPageMainContentText">Make it happen</p>
     </main>
     <footer className = "ContentScrollerFooter">

@@ -1,7 +1,6 @@
 .WorkPage {
   width: 100%;
-  height: 100vh;
-  background-color: #f6c8c9;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -10,4 +9,37 @@
 .WorkPageMainContent {
   width: 100%;
   flex: 1;
+}
+
+.WorkPageTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px;
+}
+
+.WorkPageTitle {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.WorkPageText {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.WorkPageCarouselContainer {
+  margin-bottom: 64px;
+}
+
+.WorkPageCarouselItemContainer {
+}
+
+.WorkPageCarouselItem {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: pink;
 }
