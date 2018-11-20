@@ -7,16 +7,16 @@ const HomePageComponent = (props) => (
       <img className = "SSALogo" src = "ssa-logo.png" alt = "SSA Logo"></img>
       <p className = "SSATitle">Sierra Space Agency</p>
       <nav className = "NavLinks">
-        <div className = "NavLink">
+        <div className = "NavLink" onClick = {() => props.onScrollClick("launch something")}>
           <p className = "NavLinkText">Home</p>
         </div>
-        <div className = "NavLink">
+        <div className = "NavLink" onClick = {() => props.onScrollClick("who we are")}>
           <p className = "NavLinkText">About</p>
         </div>
-        <div className = "NavLink">
+        <div className = "NavLink" onClick = {() => props.onScrollClick("what we do")}>
           <p className = "NavLinkText">Work</p>
         </div>
-        <div className = "NavLink">
+        <div className = "NavLink" onClick = {() => props.onScrollClick("how we do it")}>
           <p className = "NavLinkText">Contact</p>
         </div>
       </nav>

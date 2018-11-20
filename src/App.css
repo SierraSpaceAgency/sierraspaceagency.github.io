@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.ContentScroller--Launch {
+  z-index: 1;
+}
+
 .ContentScrollerFooter {
   width: 100%;
   display: flex;
@@ -29,7 +33,16 @@
   margin-bottom: 14px;
 }
 
+.ContentScrollerTitle--Launch {
+  color: #f6c8c9;
+  margin-bottom: 0;
+}
+
 .ContentScrollerImage {
   width: 48px;
   height: auto;
+}
+
+.ContentScrollerImage--Launch {
+  margin-bottom: 14px;
 }
