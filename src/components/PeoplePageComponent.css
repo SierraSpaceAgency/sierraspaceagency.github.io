@@ -24,3 +24,17 @@
   color: #FFFFFF;
   font-size: 20px;
 }
+
+.PeoplePageCarouselContainer {
+  margin-bottom: 64px;
+}
+
+.PeoplePageCarouselItemContainer {
+}
+
+.PeoplePageCarouselItem {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: pink;
+}
