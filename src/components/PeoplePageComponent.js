@@ -3,13 +3,10 @@ import './PeoplePageComponent.css';
 
 const PeoplePageComponent = props => (
   <section className = "PeoplePage">
-    <div className = "PeoplePageMainContent"></div>
-    <footer className = "ContentScrollerFooter">
-      <div className = "ContentScroller" onClick = {() => props.onScrollClick("work")}>
-        <p className = "ContentScrollerTitle">{"what we do"}</p>
-        <img className = "ContentScrollerImage" src = "arrow-1.png" alt = "Scroll down"/>
-      </div>
-    </footer>
+  <div className = "PeoplePageTextContent">
+    <p className = "PeoplePageTitle">Who We Are</p>
+    <p className = "PeoplePageText">We're a verteran team of startup designers and engineers</p>
+  </div>
   </section>
 )
 
