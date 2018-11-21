@@ -4,6 +4,7 @@ import './WorkPageComponent.css';
 
 const WorkPageComponent = props => {
 
+  // Slider settings
   var settings = {
       autoplay: true,
       autoplaySpeed: 5000,
