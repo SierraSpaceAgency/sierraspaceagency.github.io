@@ -9,12 +9,36 @@ const PeoplePageComponent = props => (
       <p className = "PeoplePageText">We're a verteran team of startup designers and engineers</p>
     </div>
     <ul className = "PeopleList">
-      <li className = "Person"><img className = "PersonImage" src = "andy.jpg"/></li>
-      <li className = "Person"><img className = "PersonImage" src = "brian.jpg"/></li>
-      <li className = "Person"><img className = "PersonImage" src = "conner.jpg"/></li>
-      <li className = "Person"><img className = "PersonImage" src = "andy.jpg"/></li>
-      <li className = "Person"><img className = "PersonImage" src = "brian.jpg"/></li>
-      <li className = "Person"><img className = "PersonImage" src = "conner.jpg"/></li>
+      <li className = "Person">
+        <img className = "PersonImage" src = "andy.jpg"/>
+        <p className = "PersonName">Andy</p>
+        <p className = "PersonTitle">Design</p>
+      </li>
+      <li className = "Person">
+        <img className = "PersonImage" src = "brian.jpg"/>
+        <p className = "PersonName">Brian</p>
+        <p className = "PersonTitle">Architecture</p>
+      </li>
+      <li className = "Person">
+        <img className = "PersonImage" src = "conner.jpg"/>
+        <p className = "PersonName">Conner</p>
+        <p className = "PersonTitle">CEO</p>
+      </li>
+      <li className = "Person">
+        <img className = "PersonImage" src = "andy.jpg"/>
+        <p className = "PersonName">Andy</p>
+        <p className = "PersonTitle">Design</p>
+      </li>
+      <li className = "Person">
+        <img className = "PersonImage" src = "brian.jpg"/>
+        <p className = "PersonName">Brian</p>
+        <p className = "PersonTitle">Architecture</p>
+      </li>
+      <li className = "Person">
+        <img className = "PersonImage" src = "conner.jpg"/>
+        <p className = "PersonName">Conner</p>
+        <p className = "PersonTitle">CEO</p>
+      </li>
     </ul>
   </section>
 )

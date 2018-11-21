@@ -34,12 +34,9 @@
   margin-bottom: 64px;
 }
 
-.WorkPageCarouselItemContainer {
-}
-
 .WorkPageCarouselItem {
-  width: 12px;
-  height: 12px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: pink;
 }
