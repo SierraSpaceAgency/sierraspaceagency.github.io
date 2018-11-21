@@ -14,7 +14,21 @@ const WorkPageComponent = props => {
       slidesToShow: 2,
       slidesToScroll: 1,
       centerMode: true,
-      centerPadding: '200px'
+      centerPadding: '100px',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     };
 
   return (

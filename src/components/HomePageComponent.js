@@ -7,7 +7,7 @@ const HomePageComponent = (props) => (
       <img className = "SSALogo" src = "ssa-logo.png" alt = "SSA Logo"></img>
       <p className = "SSATitle">Sierra Space Agency</p>
     </header>
-    <img className = "SSAImage" src = "sierra-mountains.png"/>
+    <img className = "SSAImage" src = "faded-sierra-mountains.png"/>
   </section>
 )
 
