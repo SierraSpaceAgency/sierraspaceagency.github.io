@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .ContentScroller {
@@ -45,4 +46,40 @@
 
 .ContentScrollerImage--Launch {
   margin-bottom: 14px;
+}
+
+.RocketBoosterImage {
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+}
+
+.RocketImage {
+  visibility: visible;
+  position: absolute;
+  bottom: 120px;
+  left: calc(10% - 15px);
+}
+
+.RocketImageLaunch {
+  visibility: visible;
+  position: absolute;
+  bottom: 120px;
+  left: calc(10% - 15px);
+}
+
+.animate-blast-off {
+  display: block;
+  position: fixed;
+  animation: blast-off 1s linear;
+}
+
+@keyframes blast-off {
+  100% {
+    bottom: 110vh;
+  }
+}
+
+.hidden {
+  visibility: hidden;
 }

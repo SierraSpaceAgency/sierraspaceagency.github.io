@@ -7,6 +7,13 @@ import './App.css';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      launching: false
+    }
+  }
+
   onScrollClick(title) {
     // scroll to the right section
     console.log(`Clicked ${title}`);
@@ -14,6 +21,11 @@ class App extends Component {
     switch(title) {
       case 'home':
         this.homePage.scrollIntoView({ block: "start", behavior: "smooth" });
+        this.setState({
+          launching: true
+        }, () => {
+          setTimeout(() => this.setState({launching: false}), 1000);
+        });
         break;
       case 'people':
         this.peoplePage.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -38,6 +50,22 @@ class App extends Component {
         <WorkPageComponent onScrollClick = {title => this.onScrollClick(title)} />
         <div ref = { (element) => {this.launchPage = element;} }></div>
         <LaunchPageComponent onScrollClick = {title => this.onScrollClick(title)} />
+        <img className = "RocketBoosterImage" src = "launch-dock.png" alt = ""/>
+        {
+          this.state.launching ?
+          (
+            <div>
+              <img className = "RocketImage hidden" src = "rocket-ship-still.png" alt = ""/>
+              <img className = "RocketImageLaunch animate-blast-off" src = "rocket-ship-launch.png" alt = ""/>
+            </div>
+          ) :
+          (
+            <div>
+              <img className = "RocketImage" src = "rocket-ship-still.png" alt = ""/>
+              <img className = "RocketImageLaunch hidden" src = "rocket-ship-launch.png" alt = ""/>
+            </div>
+          )
+        }
       </div>
     );
   }
