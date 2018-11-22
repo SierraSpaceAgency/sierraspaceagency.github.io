@@ -6,6 +6,7 @@
 }
 
 .RocketBoosterImage {
+  visibility: visible;
   position: absolute;
   bottom: 0px;
   left: 10%;
@@ -39,4 +40,27 @@
 
 .hidden {
   visibility: hidden;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 1023px) {
+
+  .RocketBoosterImage {
+    visibility: hidden;
+  }
+
+  .RocketImage {
+    visibility: hidden;
+    position: absolute;
+    bottom: 120px;
+    left: calc(10% - 15px);
+  }
+
+  .RocketImageLaunch {
+    visibility: hidden;
+    position: absolute;
+    bottom: 120px;
+    left: calc(10% - 15px);
+  }
+
 }

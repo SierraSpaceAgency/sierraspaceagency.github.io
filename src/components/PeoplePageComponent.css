@@ -70,3 +70,16 @@
   font-size: 18px;
   text-align: center;
 }
+
+/* MOBILE LAYOUT */
+@media (max-width: 1023px) {
+  .PeoplePageTitle {
+    font-size: 30px;
+  }
+
+  .PeoplePageText {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: left;
+  }
+}
