@@ -22,13 +22,13 @@
   font-weight: 900;
   margin: 0;
   margin-bottom: 40px;
-  text-align: left;
+  text-align: center;
 }
 
 .PeoplePageText {
   color: #FFFFFF;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .PeopleList {
@@ -79,6 +79,5 @@
   .PeoplePageText {
     color: #FFFFFF;
     font-size: 18px;
-    text-align: left;
   }
 }

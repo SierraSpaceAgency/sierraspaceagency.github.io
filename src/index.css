@@ -40,3 +40,7 @@ p {
   margin: 0;
   font-family: 'HKGrotesk-Regular', 'sans-serif';
 }
+
+*:focus {
+    outline: none;
+}
