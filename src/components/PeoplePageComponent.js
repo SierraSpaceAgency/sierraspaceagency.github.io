@@ -10,34 +10,34 @@ const PeoplePageComponent = props => (
     </div>
     <ul className = "PeopleList">
       <li className = "Person">
-        <img className = "PersonImage" src = "andy.jpg"/>
+        <img className = "PersonImage" src = "Andy.png"/>
         <p className = "PersonName">Andy</p>
         <p className = "PersonTitle">Design</p>
       </li>
       <li className = "Person">
-        <img className = "PersonImage" src = "brian.jpg"/>
+        <img className = "PersonImage" src = "Brian.png"/>
         <p className = "PersonName">Brian</p>
-        <p className = "PersonTitle">Architecture</p>
+        <p className = "PersonTitle">Client Success</p>
       </li>
       <li className = "Person">
-        <img className = "PersonImage" src = "conner.jpg"/>
+        <img className = "PersonImage" src = "Conner.png"/>
         <p className = "PersonName">Conner</p>
-        <p className = "PersonTitle">CEO</p>
+        <p className = "PersonTitle">Engineering</p>
       </li>
       <li className = "Person">
-        <img className = "PersonImage" src = "andy.jpg"/>
-        <p className = "PersonName">Andy</p>
-        <p className = "PersonTitle">Design</p>
+        <img className = "PersonImage" src = "Grace.png"/>
+        <p className = "PersonName">Grace</p>
+        <p className = "PersonTitle">Engineering</p>
       </li>
       <li className = "Person">
-        <img className = "PersonImage" src = "brian.jpg"/>
-        <p className = "PersonName">Brian</p>
-        <p className = "PersonTitle">Architecture</p>
+        <img className = "PersonImage" src = "Kevin.png"/>
+        <p className = "PersonName">Kevin</p>
+        <p className = "PersonTitle">Marketing</p>
       </li>
       <li className = "Person">
-        <img className = "PersonImage" src = "conner.jpg"/>
-        <p className = "PersonName">Conner</p>
-        <p className = "PersonTitle">CEO</p>
+        <img className = "PersonImage" src = "Sally.png"/>
+        <p className = "PersonName">Sally</p>
+        <p className = "PersonTitle">Engineering</p>
       </li>
     </ul>
   </section>

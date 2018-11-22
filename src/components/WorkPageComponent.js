@@ -11,8 +11,7 @@ const WorkPageComponent = props => {
       infinite: true,
       speed: 1500,
       slidesToShow: 4,
-      slidesToScroll: 1,
-      centerPadding: '400px'
+      slidesToScroll: 1
     };
 
   return (

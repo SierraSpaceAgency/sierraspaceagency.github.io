@@ -54,22 +54,20 @@
 .PersonImage {
   width: 150px;
   height: 150px;
-  background-color: #FAFAFA;
-  border-radius: 50%;
-  box-shadow: 0 1px 2px black;
-  object-fit: cover;
 }
 
 .PersonName {
   color: #FFFFFF;
   font-size: 20px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .PersonTitle {
-  color: #FFFFFF;
+  color: #ABABAB;
   font-size: 18px;
   text-align: center;
+  margin-top: 4px;
 }
 
 /* MOBILE LAYOUT */
