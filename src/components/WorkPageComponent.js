@@ -34,7 +34,7 @@ const WorkPageComponent = props => {
   return (
     <section className = "WorkPage">
       <div className = "WorkPageTextContent">
-        <p className = "WorkPageTitle">What We Do</p>
+        <p className = "WorkPageTitle TitleText">What We Do</p>
         <p className = "WorkPageText">We build fun apps for big brands. Check out some of our work.</p>
       </div>
       <div className = "WorkPageCarouselContainer">

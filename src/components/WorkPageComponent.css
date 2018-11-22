@@ -20,8 +20,9 @@
 
 .WorkPageTitle {
   color: #FFFFFF;
+  font-family: 'Montserrat', 'sans-serif';
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 40px;
   text-align: left;
 }
@@ -47,7 +48,7 @@
   .WorkPageTitle {
     color: #FFFFFF;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 40px;
     text-align: left;
   }

@@ -17,8 +17,9 @@
 
 .PeoplePageTitle {
   color: #FFFFFF;
+  font-family: 'Montserrat', 'sans-serif';
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0;
   margin-bottom: 40px;
   text-align: left;

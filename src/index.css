@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'HKGrotesk-Light';
+    src: url(./fonts/HKGrotesk-Light.otf);
+}
+
+@font-face {
+    font-family: 'HKGrotesk-Regular';
+    src: url(./fonts/HKGrotesk-Regular.otf);
+}
+
+@font-face {
+    font-family: 'HKGrotesk-Medium';
+    src: url(./fonts/HKGrotesk-Medium.otf);
+}
+
 html {
   width: 100%;
 }
@@ -19,5 +34,5 @@ code {
 
 p {
   margin: 0;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'HKGrotesk-Regular', 'sans-serif';
 }

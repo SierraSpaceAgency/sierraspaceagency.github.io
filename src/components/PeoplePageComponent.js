@@ -5,7 +5,7 @@ import './PeoplePageComponent.css';
 const PeoplePageComponent = props => (
   <section className = "PeoplePage">
     <div className = "PeoplePageTextContent">
-      <p className = "PeoplePageTitle">Who We Are</p>
+      <p className = "PeoplePageTitle TitleText">Who We Are</p>
       <p className = "PeoplePageText">We're a veteran team of startup designers and engineers</p>
     </div>
     <ul className = "PeopleList">

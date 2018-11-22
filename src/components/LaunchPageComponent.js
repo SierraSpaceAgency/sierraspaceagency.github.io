@@ -5,7 +5,7 @@ const LaunchPageComponent = props => (
   <section className = "LaunchPage">
     <main className = "LaunchPageMainContent">
       <p className = "LaunchPageMainContentTitle">Everyone has ideas</p>
-      <p className = "LaunchPageMainContentText">Make it happen</p>
+      <p className = "LaunchPageMainContentText TitleText">Make it happen</p>
     </main>
     <footer className = "ContentScrollerFooter">
       <div className = "ContentScroller" onClick = {() => props.onLaunchClick()}>
