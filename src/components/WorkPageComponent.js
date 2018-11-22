@@ -10,18 +10,9 @@ const WorkPageComponent = props => {
       autoplaySpeed: 5000,
       infinite: true,
       speed: 1500,
-      slidesToShow: 2,
+      slidesToShow: 4,
       slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: '300px',
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ]
+      centerPadding: '400px'
     };
 
   return (
@@ -32,11 +23,12 @@ const WorkPageComponent = props => {
       </div>
       <div className = "WorkPageCarouselContainer">
         <Slider {...settings}>
-          <div><div className = "WorkPageCarouselItem"></div></div>
-          <div><div className = "WorkPageCarouselItem"></div></div>
-          <div><div className = "WorkPageCarouselItem"></div></div>
-          <div><div className = "WorkPageCarouselItem"></div></div>
-          <div><div className = "WorkPageCarouselItem"></div></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "CNN.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Scoutmob.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src="YikYak.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src="Moments.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Liftoff.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Index.png" alt = ""/></div>
         </Slider>
       </div>
     </section>
