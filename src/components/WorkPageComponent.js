@@ -8,24 +8,17 @@ const WorkPageComponent = props => {
   var settings = {
       autoplay: true,
       autoplaySpeed: 5000,
-      arrows: true,
       infinite: true,
       speed: 1500,
       slidesToShow: 2,
       slidesToScroll: 1,
       centerMode: true,
-      centerPadding: '100px',
+      centerPadding: '300px',
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1
+            slidesToShow: 1,
           }
         }
       ]

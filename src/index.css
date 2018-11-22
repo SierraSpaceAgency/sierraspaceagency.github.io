@@ -17,6 +17,10 @@ html {
   width: 100%;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
