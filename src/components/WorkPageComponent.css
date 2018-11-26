@@ -34,7 +34,7 @@
 }
 
 .WorkPageCarouselItem {
-  padding: 0 84px;
+  padding: 0 120px;
 }
 
 .WorkPageCarouselImage {
@@ -55,5 +55,14 @@
   .WorkPageText {
     color: #FFFFFF;
     font-size: 18px;
+  }
+
+  .WorkPageCarouselItem {
+    padding: 0 64px;
+  }
+
+  .WorkPageCarouselImage {
+    width: 86px;
+    height: auto;
   }
 }
