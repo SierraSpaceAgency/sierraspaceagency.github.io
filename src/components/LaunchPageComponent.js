@@ -7,13 +7,11 @@ const LaunchPageComponent = props => (
       <img className = "LaunchPageGradientImage" src = "black-gradient.png" alt = ""/>
       <p className = "LaunchPageMainContentTitle">Everyone has ideas</p>
       <p className = "LaunchPageMainContentText TitleText">Make it happen</p>
-    </main>
-    <footer className = "ContentScrollerFooter">
       <div className = "ContentScroller" onClick = {() => props.onLaunchClick()}>
+        <p className = "ContentScrollerTitle">{"Launch"}</p>
         <img className = "ContentScrollerImage" src = "arrow-launch.png" alt = "Scroll down"/>
-        <p className = "ContentScrollerTitle">{"launch something"}</p>
       </div>
-    </footer>
+    </main>
     <img className = "LaunchPageMountainRange" src = "mountain-range.png"/>
   </section>
 )

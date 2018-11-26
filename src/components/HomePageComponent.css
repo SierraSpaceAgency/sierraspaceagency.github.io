@@ -13,7 +13,7 @@
 header {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: flex-start;
   padding: 16px 3%;
 }
@@ -33,6 +33,7 @@ p {
   font-size: 22px;
   color: #676f95;
   flex: 1;
+  padding-top: 4px;
 }
 
 .NavLinks {
