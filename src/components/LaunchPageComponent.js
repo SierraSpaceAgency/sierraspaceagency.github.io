@@ -4,6 +4,7 @@ import './LaunchPageComponent.css';
 const LaunchPageComponent = props => (
   <section className = "LaunchPage">
     <main className = "LaunchPageMainContent">
+      <img className = "LaunchPageGradientImage" src = "black-gradient.png" alt = ""/>
       <p className = "LaunchPageMainContentTitle">Everyone has ideas</p>
       <p className = "LaunchPageMainContentText TitleText">Make it happen</p>
     </main>
