@@ -42,6 +42,10 @@
   max-width: 750px;
 }
 
+.PersonLink {
+  text-decoration: none;
+}
+
 .Person {
   list-style: none;
   display: flex;
