@@ -12,7 +12,7 @@ const LaunchPageComponent = props => (
         <img className = "ContentScrollerImage" src = "arrow-launch.png" alt = "Scroll down"/>
       </div>
     </main>
-    <img className = "LaunchPageMountainRange" src = "mountain-range.png"/>
+    <img className = "LaunchPageMountainRange" src = "mountain-range.png" alt = ""/>
   </section>
 )
 
