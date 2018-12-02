@@ -16,14 +16,19 @@ class App extends Component {
 
   /* Called when the launch button at the bottom is clicked */
   onLaunchClick() {
+    // grab this for use in the addeventlistener callback
+    let self = this;
     // scroll to the very top
     this.homePage.scrollIntoView({ block: "start", behavior: "smooth" });
     // set launching state to true so the rocket launches
     this.setState({
       launching: true
     }, () => {
-      // set launching state back to false a second later
-      setTimeout(() => this.setState({launching: false}), 1000);
+      // add an event listener to get rid of the rocket when its animation ends
+      this.launchRocket.addEventListener("animationend",
+      function(event) {
+        self.setState({launching: false});
+      }, false);
     });
   }
 
@@ -43,7 +48,7 @@ class App extends Component {
           (
             <div>
               <img className = "RocketImage hidden" src = "rocket-ship-still.png" alt = ""/>
-              <img className = "RocketImageLaunch animate-blast-off" src = "rocket-ship-launch.png" alt = ""/>
+              <img ref = { (element) => {this.launchRocket = element;} } className = "RocketImageLaunch animate-blast-off" src = "rocket-ship-launch.png" alt = ""/>
             </div>
           ) :
           /** otherwise show the original image and hide the launching image **/

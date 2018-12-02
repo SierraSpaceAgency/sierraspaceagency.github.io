@@ -30,12 +30,10 @@ const PeoplePageComponent = props => (
         </a>
       </li>
       <li className = "Person">
-        <a className = "PersonLink" href = "https://www.linkedin.com/in/gracekang93/">
-          <img className = "PersonImage" src = "Grace.png" alt = ""/>
-          <p className = "PersonName">Grace</p>
-          <p className = "PersonTitle">Engineering</p>
-        </a>
-      </li>
+        <img className = "PersonImage" src = "Grace.png" alt = ""/>
+        <p className = "PersonName">Grace</p>
+        <p className = "PersonTitle">Engineering</p>
+        </li>
       <li className = "Person">
         <img className = "PersonImage" src = "Kevin.png" alt = ""/>
         <p className = "PersonName">Kevin</p>
