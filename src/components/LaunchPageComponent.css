@@ -72,15 +72,23 @@
   cursor: pointer;
   z-index: 1;
   margin-top: 80px;
+  padding: 20px;
+  transition: background-color .18s ease-out;
+  border-radius: 10%;
+}
+
+.ContentScroller:hover {
+  background-color: #FFFFFF24;
 }
 
 .ContentScrollerTitle {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 700;
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .ContentScrollerImage {

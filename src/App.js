@@ -19,7 +19,7 @@ class App extends Component {
     // grab this for use in the addeventlistener callback
     let self = this;
     // scroll to the very top
-    this.homePage.scrollIntoView({ block: "start", behavior: "smooth" });
+    this.homePage.scrollIntoView({ block: "start", behavior: "smooth", duration: 2.0 });
     // set launching state to true so the rocket launches
     this.setState({
       launching: true

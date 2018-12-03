@@ -29,7 +29,7 @@
 .animate-blast-off {
   display: block;
   position: fixed;
-  animation: blast-off 1s linear;
+  animation: blast-off 1.1s linear;
 }
 
 @keyframes blast-off {
