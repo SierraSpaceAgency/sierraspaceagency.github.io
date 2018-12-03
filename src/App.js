@@ -7,37 +7,58 @@ import './App.css';
 
 class App extends Component {
 
-  onScrollClick(title) {
-    // scroll to the right section
-    console.log(`Clicked ${title}`);
-
-    switch(title) {
-      case 'home':
-        this.homePage.scrollIntoView({ block: "start", behavior: "smooth" });
-        break;
-      case 'people':
-        this.peoplePage.scrollIntoView({ block: "start", behavior: "smooth" });
-        break;
-      case 'work':
-        this.workPage.scrollIntoView({ block: "start", behavior: "smooth" });
-        break;
-      case 'launch':
-        this.launchPage.scrollIntoView({ block: "start", behavior: "smooth" });
-        break;
+  constructor(props) {
+    super(props);
+    this.state = {
+      launching: false
     }
+  }
+
+  /* Called when the launch button at the bottom is clicked */
+  onLaunchClick() {
+    // grab this for use in the addeventlistener callback
+    let self = this;
+    // scroll to the very top
+    this.homePage.scrollIntoView({ block: "start", behavior: "smooth" });
+    // set launching state to true so the rocket launches
+    this.setState({
+      launching: true
+    }, () => {
+      // add an event listener to get rid of the rocket when its animation ends
+      this.launchRocket.addEventListener("animationend",
+      function(event) {
+        self.setState({launching: false});
+      }, false);
+    });
   }
 
   render() {
     return (
       <div className="App">
         <div ref = { (element) => {this.homePage = element;} }></div>
-        <HomePageComponent onScrollClick = {title => this.onScrollClick(title)} />
-        <div ref = { (element) => {this.peoplePage = element;} }></div>
-        <PeoplePageComponent onScrollClick = {title => this.onScrollClick(title)} />
-        <div ref = { (element) => {this.workPage = element;} }></div>
-        <WorkPageComponent onScrollClick = {title => this.onScrollClick(title)} />
-        <div ref = { (element) => {this.launchPage = element;} }></div>
-        <LaunchPageComponent onScrollClick = {title => this.onScrollClick(title)} />
+        <HomePageComponent />
+        <PeoplePageComponent />
+        <WorkPageComponent />
+        <LaunchPageComponent onLaunchClick = {() => this.onLaunchClick()} />
+        <img className = "RocketBoosterImage" src = "launch-dock.png" alt = ""/>
+        {
+          /** if we're in the launching state **/
+          this.state.launching ?
+          /** hide the original image, show the launching image and animate its launch **/
+          (
+            <div>
+              <img className = "RocketImage hidden" src = "rocket-ship-still.png" alt = ""/>
+              <img ref = { (element) => {this.launchRocket = element;} } className = "RocketImageLaunch animate-blast-off" src = "rocket-ship-launch.png" alt = ""/>
+            </div>
+          ) :
+          /** otherwise show the original image and hide the launching image **/
+          (
+            <div>
+              <img className = "RocketImage" src = "rocket-ship-still.png" alt = ""/>
+              <img className = "RocketImageLaunch hidden" src = "rocket-ship-launch.png" alt = ""/>
+            </div>
+          )
+        }
       </div>
     );
   }

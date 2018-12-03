@@ -4,16 +4,15 @@ import './LaunchPageComponent.css';
 const LaunchPageComponent = props => (
   <section className = "LaunchPage">
     <main className = "LaunchPageMainContent">
-      <p className = "LaunchPageMainContentTitle">Need a great app?</p>
-      <p className = "LaunchPageMainContentText">Make it happen</p>
-    </main>
-    <footer className = "ContentScrollerFooter">
-      <div className = "ContentScroller ContentScroller--Launch" onClick = {() => props.onScrollClick("home")}>
-        <img className = "ContentScrollerImage ContentScrollerImage--Launch" src = "arrow-launch.png" alt = "Scroll down"/>
-        <p className = "ContentScrollerTitle ContentScrollerTitle--Launch">{"launch something"}</p>
+      <img className = "LaunchPageGradientImage" src = "black-gradient.png" alt = ""/>
+      <p className = "LaunchPageMainContentTitle">Everyone has ideas</p>
+      <p className = "LaunchPageMainContentText TitleText">Make it happen</p>
+      <div className = "ContentScroller" onClick = {() => props.onLaunchClick()}>
+        <p className = "ContentScrollerTitle">{"Launch"}</p>
+        <img className = "ContentScrollerImage" src = "arrow-launch.png" alt = "Scroll down"/>
       </div>
-    </footer>
-    <img className = "LaunchPageMountainRange" src = "mountain-range.png"/>
+    </main>
+    <img className = "LaunchPageMountainRange" src = "mountain-range.png" alt = ""/>
   </section>
 )
 

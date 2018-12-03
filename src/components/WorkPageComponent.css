@@ -1,13 +1,68 @@
 .WorkPage {
   width: 100%;
-  height: 100vh;
-  background-color: #f6c8c9;
+  background-color: #1C1B1F;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.WorkPageMainContent {
-  width: 100%;
-  flex: 1;
+.WorkPageTextContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 10%;
+}
+
+.WorkPageTitle {
+  color: #FFFFFF;
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.WorkPageText {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+.WorkPageCarouselContainer {
+  margin-bottom: 120px;
+}
+
+.WorkPageCarouselItem {
+  padding: 0 120px;
+}
+
+.WorkPageCarouselImage {
+  width: 128px;
+  height: auto;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 1023px) {
+  .WorkPageTitle {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .WorkPageText {
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+
+  .WorkPageCarouselItem {
+    padding: 0 64px;
+  }
+
+  .WorkPageCarouselImage {
+    width: 86px;
+    height: auto;
+  }
 }

@@ -2,47 +2,65 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
-.ContentScroller {
-  align-self: baseline;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px;
-  cursor: pointer;
+.RocketBoosterImage {
+  visibility: visible;
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
 }
 
-.ContentScroller--Launch {
-  z-index: 1;
+.RocketImage {
+  visibility: visible;
+  position: absolute;
+  bottom: 120px;
+  left: calc(10% - 15px);
 }
 
-.ContentScrollerFooter {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.RocketImageLaunch {
+  visibility: visible;
+  position: absolute;
+  bottom: 120px;
+  left: calc(10% - 15px);
 }
 
-.ContentScrollerTitle {
-  color: #929cc4;
-  font-size: 18px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 14px;
+.animate-blast-off {
+  display: block;
+  position: fixed;
+  animation: blast-off 1s linear;
 }
 
-.ContentScrollerTitle--Launch {
-  color: #f6c8c9;
-  margin-bottom: 0;
+@keyframes blast-off {
+  100% {
+    bottom: 110vh;
+  }
 }
 
-.ContentScrollerImage {
-  width: 48px;
-  height: auto;
+.hidden {
+  visibility: hidden;
 }
 
-.ContentScrollerImage--Launch {
-  margin-bottom: 14px;
+/* MOBILE LAYOUT */
+@media (max-width: 1023px) {
+
+  .RocketBoosterImage {
+    visibility: hidden;
+  }
+
+  .RocketImage {
+    visibility: hidden;
+    position: absolute;
+    bottom: 120px;
+    left: calc(10% - 15px);
+  }
+
+  .RocketImageLaunch {
+    visibility: hidden;
+    position: absolute;
+    bottom: 120px;
+    left: calc(10% - 15px);
+  }
+
 }
