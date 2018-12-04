@@ -7,9 +7,9 @@ const WorkPageComponent = props => {
   // Slider settings
   var settings = {
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       infinite: true,
-      speed: 1500,
+      speed: 1000,
       slidesToShow: 4,
       slidesToScroll: 1,
       pauseOnHover: true,
