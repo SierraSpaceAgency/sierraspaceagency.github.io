@@ -12,38 +12,38 @@ const PeoplePageComponent = props => (
         <a className = "PersonLink" href = "https://andrewferrarone.com">
           <img className = "PersonImage" src = "Andy.png" alt = ""/>
           <p className = "PersonName">Andy</p>
-          <p className = "PersonTitle">Design</p>
+          <p className = "PersonTitle">DESIGN</p>
         </a>
       </li>
       <li className = "Person">
         <a className = "PersonLink" href = "http://briancox.co">
           <img className = "PersonImage" src = "Brian.png" alt = ""/>
           <p className = "PersonName">Brian</p>
-          <p className = "PersonTitle">Client Success</p>
+          <p className = "PersonTitle">CLIENT SUCCESS</p>
         </a>
       </li>
       <li className = "Person">
         <a className = "PersonLink" href = "https://connerhinman.com">
           <img className = "PersonImage" src = "Conner.png" alt = ""/>
           <p className = "PersonName">Conner</p>
-          <p className = "PersonTitle">Engineering</p>
+          <p className = "PersonTitle">ENGINEERING</p>
         </a>
       </li>
       <li className = "Person">
         <img className = "PersonImage" src = "Grace.png" alt = ""/>
         <p className = "PersonName">Grace</p>
-        <p className = "PersonTitle">Engineering</p>
+        <p className = "PersonTitle">ENGINEERING</p>
         </li>
       <li className = "Person">
         <img className = "PersonImage" src = "Kevin.png" alt = ""/>
         <p className = "PersonName">Kevin</p>
-        <p className = "PersonTitle">Marketing</p>
+        <p className = "PersonTitle">ENGINEERING</p>
       </li>
       <li className = "Person">
         <a className = "PersonLink" href = "https://www.sallyblair.io/">
           <img className = "PersonImage" src = "Sally.png" alt = ""/>
           <p className = "PersonName">Sally</p>
-          <p className = "PersonTitle">Engineering</p>
+          <p className = "PersonTitle">ENGINEERING</p>
         </a>
       </li>
     </ul>

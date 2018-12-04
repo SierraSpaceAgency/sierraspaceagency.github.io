@@ -29,7 +29,7 @@
   margin: 0;
   font-size: 24px;
   color: #FFFFFF;
-  margin-top: 120px;
+  margin-top: 130px;
   text-shadow: 0 1px 1px #000000;
   text-align: center;
   z-index: 1;
@@ -40,7 +40,7 @@
   font-size: 80px;
   font-family: 'Montserrat', 'sans-serif';
   color: #FFFFFF;
-  margin-top: 120px;
+  margin-top: 100px;
   text-align: center;
   font-weight: 900;
   z-index: 1;
@@ -75,6 +75,7 @@
   padding: 20px;
   transition: background-color .18s ease-out;
   border-radius: 10%;
+  background-color: #FFFFFF10;
 }
 
 .ContentScroller:hover {
@@ -82,9 +83,10 @@
 }
 
 .ContentScrollerTitle {
+  font-family: 'Montserrat', Helvetica, Arial, san-serif;
+  font-weight: 500;
+  font-size: 13px;
   color: #FFFFFF;
-  font-size: 15px;
-  font-weight: 700;
   text-align: center;
   margin: 0;
   padding: 0;

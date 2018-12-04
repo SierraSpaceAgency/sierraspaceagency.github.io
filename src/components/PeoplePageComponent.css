@@ -68,8 +68,10 @@
 }
 
 .PersonTitle {
+  font-family: 'Montserrat', Helvetica, Arial, san-serif;
+  font-weight: 500;
   color: #ABABAB;
-  font-size: 18px;
+  font-size: 11px;
   text-align: center;
   margin-top: 4px;
 }
