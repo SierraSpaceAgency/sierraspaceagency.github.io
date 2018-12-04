@@ -27,8 +27,13 @@ class App extends Component {
       // add an event listener to get rid of the rocket when its animation ends
       this.launchRocket.addEventListener("animationend",
       function(event) {
+        // reset the rocket launch
         self.setState({launching: false});
+        // launch a mailto
+        window.location.href = "mailto:launch@sierraspacegency.com?subject=Launch";
+
       }, false);
+
     });
   }
 
