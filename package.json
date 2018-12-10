@@ -2,6 +2,7 @@
   "name": "sierra-space-agency-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sierraspaceagency.github.io",
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
