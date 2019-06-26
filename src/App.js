@@ -30,7 +30,7 @@ class App extends Component {
         // reset the rocket launch
         self.setState({launching: false});
         // launch a mailto
-        window.location.href = "mailto:launch@sierraspacegency.com?subject=Launch";
+        window.location.href = "mailto:launch@sierraspaceagency.com?subject=Launch";
 
       }, false);
 
