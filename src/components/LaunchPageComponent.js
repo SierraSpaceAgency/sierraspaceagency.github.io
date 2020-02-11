@@ -5,7 +5,7 @@ const LaunchPageComponent = props => (
   <section className = "LaunchPage">
     <main className = "LaunchPageMainContent">
       <img className = "LaunchPageGradientImage" src = "black-gradient.png" alt = ""/>
-      <p className = "LaunchPageMainContentTitle">Everyone has ideas</p>
+      <p className = "LaunchPageMainContentTitle">Ready to launch?</p>
       <p className = "LaunchPageMainContentText TitleText">Make it happen</p>
       <div className = "ContentScroller" onClick = {() => props.onLaunchClick()}>
         <p className = "ContentScrollerTitle">{"LAUNCH"}</p>
