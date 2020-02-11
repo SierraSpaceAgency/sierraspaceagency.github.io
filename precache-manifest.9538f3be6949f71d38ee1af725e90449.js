@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "544834bdfd31fa1e61c2",
-    "url": "/static/css/main.6426d541.chunk.css"
+    "revision": "0014e455df924cb8e1b8",
+    "url": "/static/css/main.6277b2c7.chunk.css"
   },
   {
-    "revision": "544834bdfd31fa1e61c2",
-    "url": "/static/js/main.544834bd.chunk.js"
+    "revision": "0014e455df924cb8e1b8",
+    "url": "/static/js/main.0014e455.chunk.js"
   },
   {
     "revision": "e004b97a1e192ab200fd",
@@ -20,19 +20,19 @@ self.__precacheManifest = [
     "url": "/static/media/HKGrotesk-Light.646f8450.otf"
   },
   {
-    "revision": "eb9ec08a175971d6d4bcb36bff5a6b46",
-    "url": "/static/media/HKGrotesk-Regular.eb9ec08a.otf"
-  },
-  {
     "revision": "1fcfefce27bbf40f4afbace8277a8ed3",
     "url": "/static/media/HKGrotesk-Medium.1fcfefce.otf"
+  },
+  {
+    "revision": "eb9ec08a175971d6d4bcb36bff5a6b46",
+    "url": "/static/media/HKGrotesk-Regular.eb9ec08a.otf"
   },
   {
     "revision": "ecc1d5049436185b805eeee09e199ebe",
     "url": "/static/media/faded-sierra-mountains.ecc1d504.png"
   },
   {
-    "revision": "789b2d4ea97c5a59a098107536d19440",
+    "revision": "053980852dc0139cae83e5417963248f",
     "url": "/index.html"
   }
 ];
