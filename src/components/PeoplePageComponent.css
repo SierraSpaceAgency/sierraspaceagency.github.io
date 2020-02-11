@@ -17,7 +17,7 @@
 
 .PeoplePageTitle {
   color: #FFFFFF;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'Montserrat';
   font-size: 40px;
   font-weight: 900;
   margin: 0;
@@ -68,7 +68,6 @@
 }
 
 .PersonTitle {
-  font-family: 'Montserrat', Helvetica, Arial, san-serif;
   font-weight: 500;
   font-size: 11px;
   color: #ABABAB;
