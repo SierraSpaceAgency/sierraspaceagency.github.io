@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.c9cc4c9b.chunk.css",
-  "main.js": "/static/js/main.0ffdc766.chunk.js",
-  "main.js.map": "/static/js/main.0ffdc766.chunk.js.map",
-  "static/js/1.bbf08e84.chunk.js": "/static/js/1.bbf08e84.chunk.js",
-  "static/js/1.bbf08e84.chunk.js.map": "/static/js/1.bbf08e84.chunk.js.map",
+  "main.css": "/static/css/main.6426d541.chunk.css",
+  "main.js": "/static/js/main.544834bd.chunk.js",
+  "main.js.map": "/static/js/main.544834bd.chunk.js.map",
+  "static/js/1.e004b97a.chunk.js": "/static/js/1.e004b97a.chunk.js",
+  "static/js/1.e004b97a.chunk.js.map": "/static/js/1.e004b97a.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/index.css": "/static/media/HKGrotesk-Light.646f8450.otf",
+  "static/media/index.css": "/static/media/HKGrotesk-Medium.1fcfefce.otf",
   "static/media/HomePageComponent.css": "/static/media/faded-sierra-mountains.ecc1d504.png",
-  "static/css/main.c9cc4c9b.chunk.css.map": "/static/css/main.c9cc4c9b.chunk.css.map",
+  "static/css/main.6426d541.chunk.css.map": "/static/css/main.6426d541.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.56acdb7450573fbecd0a47e69e0a54ff.js": "/precache-manifest.56acdb7450573fbecd0a47e69e0a54ff.js",
+  "precache-manifest.0d68115ae8e24142d9a39b9f0181f17d.js": "/precache-manifest.0d68115ae8e24142d9a39b9f0181f17d.js",
   "service-worker.js": "/service-worker.js"
 }
