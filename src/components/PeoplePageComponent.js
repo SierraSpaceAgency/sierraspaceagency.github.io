@@ -5,7 +5,7 @@ const PeoplePageComponent = props => (
   <section className = "PeoplePage">
     <div className = "PeoplePageTextContent">
       <p className = "PeoplePageTitle TitleText">Who We Are</p>
-      <p className = "PeoplePageText">We're a veteran team of startup designers and engineers</p>
+      <p className = "PeoplePageText">A veteran team of startup designers and engineers</p>
     </div>
     <ul className = "PeopleList">
       <li className = "Person">
@@ -19,7 +19,7 @@ const PeoplePageComponent = props => (
         <a className = "PersonLink" href = "http://briancox.co">
           <img className = "PersonImage" src = "Brian.png" alt = ""/>
           <p className = "PersonName">Brian</p>
-          <p className = "PersonTitle">CLIENT SUCCESS</p>
+          <p className = "PersonTitle">PRODUCT</p>
         </a>
       </li>
       <li className = "Person">
