@@ -38,6 +38,7 @@ const WorkPageComponent = props => {
       <div className = "WorkPageCarouselContainer">
         <Slider {...settings}>
           <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "CNN.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Prosper.png" alt = ""/></div>
           <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Scoutmob.png" alt = ""/></div>
           <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src="YikYak.png" alt = ""/></div>
           <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src="Moments.png" alt = ""/></div>
