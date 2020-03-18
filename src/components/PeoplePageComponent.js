@@ -19,7 +19,7 @@ const PeoplePageComponent = props => (
         <a className = "PersonLink" href = "http://briancox.co">
           <img className = "PersonImage" src = "Brian.png" alt = ""/>
           <div className = "Label PersonName">Brian</div>
-          <div className = "Label PersonTitle">PRODUCT</div>
+          <div className = "Label PersonTitle">ARCHITECT</div>
         </a>
       </li>
       <li className = "Person">
