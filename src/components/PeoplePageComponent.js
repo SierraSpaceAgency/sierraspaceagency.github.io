@@ -16,14 +16,14 @@ const PeoplePageComponent = props => (
         </a>
       </li>
       <li className = "Person">
-        <a className = "PersonLink" href = "https://andrewferrarone.com">
+        <a className = "PersonLink">
           <img className = "PersonImage" src = "Andy.png" alt = ""/>
           <div className = "Label PersonName">Andy</div>
           <div className = "Label PersonTitle">Design</div>
         </a>
       </li>
       <li className = "Person">
-        <a className = "PersonLink" href = "https://connerhinman.com">
+        <a className = "PersonLink">
           <img className = "PersonImage" src = "Conner.png" alt = ""/>
           <div className = "Label PersonName">Conner</div>
           <div className = "Label PersonTitle">Engineering</div>
