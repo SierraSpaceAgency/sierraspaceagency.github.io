@@ -37,13 +37,15 @@ const WorkPageComponent = props => {
       </div>
       <div className = "WorkPageCarouselContainer">
         <Slider {...settings}>
-          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "CNN.png" alt = ""/></div>
-          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Prosper.png" alt = ""/></div>
-          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Scoutmob.png" alt = ""/></div>
-          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src="YikYak.png" alt = ""/></div>
-          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src="Moments.png" alt = ""/></div>
-          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Liftoff.png" alt = ""/></div>
           <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Index.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Scoutmob.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src= "YikYak.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Prosper.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Series.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Stir.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "Liftoff.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src="Moments.png" alt = ""/></div>
+          <div className = "WorkPageCarouselItem"><img className = "WorkPageCarouselImage" src = "CNN.png" alt = ""/></div>
         </Slider>
       </div>
     </section>
