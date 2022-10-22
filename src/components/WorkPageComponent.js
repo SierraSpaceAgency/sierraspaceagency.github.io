@@ -33,7 +33,7 @@ const WorkPageComponent = props => {
     <section className = "WorkPage">
       <div className = "WorkPageTextContent">
         <div className = "WorkPageTitle TitleText">What We Do</div>
-        <p className = "WorkPageText">We build dangerously fun apps. Funded by corporate special ops contracting.</p>
+        <p className = "WorkPageText">We build dangerously fun apps</p>
       </div>
       <div className = "WorkPageCarouselContainer">
         <Slider {...settings}>
