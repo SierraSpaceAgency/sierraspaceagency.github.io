@@ -115,10 +115,71 @@
   max-width: 300px;
   margin: 40px auto 60px auto;
   animation: fadeInUp 0.5s ease-out;
+  position: relative;
 }
 
 .LaunchedEmail p {
   margin: 0;
+}
+
+.LaunchedEmailLink {
+  color: #87CEEB;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  text-decoration: underline;
+  text-decoration-color: rgba(135, 206, 235, 0.5);
+}
+
+.LaunchedEmailLink:hover {
+  color: #B0E0E6;
+  text-decoration-color: rgba(176, 224, 230, 0.7);
+}
+
+.CopyButton {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  padding: 4px;
+  transition: all 0.15s ease;
+  vertical-align: middle;
+  position: relative;
+}
+
+.CopyButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.CopyButton:active {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.CopyTooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 20;
+  animation: tooltipFade 2s ease-out;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4px;
 }
 
 @keyframes fadeInUp {
@@ -129,6 +190,21 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes tooltipFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(5px);
+  }
+  10%, 85% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-3px);
   }
 }
 
@@ -160,6 +236,17 @@
     margin: 30px auto 50px auto;
     line-height: 1.4;
   }
+
+  .CopyTooltip {
+    font-size: 10px;
+    padding: 5px 8px;
+    margin-bottom: 3px;
+  }
+
+  .CopyButton {
+    padding: 3px;
+    margin-left: 4px;
+  }
   
 }
 
@@ -170,5 +257,21 @@
     max-width: 240px;
     padding: 10px 14px;
     margin: 25px auto 40px auto;
+  }
+
+  .CopyTooltip {
+    font-size: 9px;
+    padding: 4px 7px;
+    margin-bottom: 2px;
+  }
+
+  .CopyButton {
+    padding: 2px;
+    margin-left: 3px;
+  }
+
+  .CopyButton svg {
+    width: 12px;
+    height: 12px;
   }
 }
