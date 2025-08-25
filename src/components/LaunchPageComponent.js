@@ -109,7 +109,7 @@ class LaunchPageComponent extends Component {
             {this.state.countdownActive && this.state.countdownNumber !== null
               ? this.state.countdownNumber
               : this.state.countdownActive
-              ? "."
+              ? " "
               : "Ready for launch"}
           </p>
           <div
