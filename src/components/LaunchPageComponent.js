@@ -6,7 +6,16 @@ class LaunchPageComponent extends Component {
     super(props);
     this.state = {
       showTooltip: false,
+      countdownActive: false,
+      countdownNumber: null,
     };
+    this.countdownInterval = null;
+  }
+
+  componentWillUnmount() {
+    if (this.countdownInterval) {
+      clearInterval(this.countdownInterval);
+    }
   }
 
   handleEmailClick = async () => {
@@ -32,6 +41,36 @@ class LaunchPageComponent extends Component {
     }
   };
 
+  handleInitiateClick = () => {
+    if (this.state.countdownActive) return; // Prevent multiple countdowns
+
+    this.setState({ countdownActive: true, countdownNumber: 3 });
+
+    // Start countdown: 3, 2, 1
+    this.countdownInterval = setInterval(() => {
+      this.setState((prevState) => {
+        const nextNumber = prevState.countdownNumber - 1;
+        if (nextNumber === 0) {
+          clearInterval(this.countdownInterval);
+          this.countdownInterval = null;
+          // Launch after brief pause
+          setTimeout(() => {
+            this.props.onLaunchClick();
+            // Reset countdown state
+            setTimeout(() => {
+              this.setState({
+                countdownActive: false,
+                countdownNumber: null,
+              });
+            }, 1000);
+          }, 300);
+          return { countdownNumber: null };
+        }
+        return { countdownNumber: nextNumber };
+      });
+    }, 800);
+  };
+
   render() {
     return (
       <section className="LaunchPage">
@@ -41,13 +80,16 @@ class LaunchPageComponent extends Component {
             src="black-gradient.png"
             alt=""
           />
-          <p className="LaunchPageMainContentTitle">Ready to launch?</p>
-          <p className="LaunchPageMainContentText TitleText">Make it happen</p>
-          <div
-            className="ContentScroller"
-            onClick={() => this.props.onLaunchClick()}
-          >
-            <p className="ContentScrollerTitle">{"LAUNCH"}</p>
+          <p className="LaunchPageMainContentTitle">
+            Reach out. We like talking shop on big problems.
+          </p>
+          <p className="LaunchPageMainContentText TitleText">
+            {this.state.countdownActive && this.state.countdownNumber !== null
+              ? this.state.countdownNumber
+              : "Ready for launch"}
+          </p>
+          <div className="ContentScroller" onClick={this.handleInitiateClick}>
+            <p className="ContentScrollerTitle">{"INITIATE"}</p>
             <img
               className="ContentScrollerImage"
               src="arrow-launch.png"
@@ -88,7 +130,7 @@ class LaunchPageComponent extends Component {
         </main>
         <img
           className="LaunchPageMountainRange"
-          src="mountain-range.png"
+          src="night-mountains.png"
           alt=""
         />
       </section>
