@@ -8,6 +8,7 @@ class LaunchPageComponent extends Component {
       showTooltip: false,
       countdownActive: false,
       countdownNumber: null,
+      animationKey: 0,
     };
     this.countdownInterval = null;
   }
@@ -44,9 +45,13 @@ class LaunchPageComponent extends Component {
   handleInitiateClick = () => {
     if (this.state.countdownActive) return; // Prevent multiple countdowns
 
-    this.setState({ countdownActive: true, countdownNumber: 3 });
+    this.setState({
+      countdownActive: true,
+      countdownNumber: 3,
+      animationKey: this.state.animationKey + 1,
+    });
 
-    // Start countdown: 3, 2, 1
+    // Start countdown: 3, 2, 1 with dramatic timing
     this.countdownInterval = setInterval(() => {
       this.setState((prevState) => {
         const nextNumber = prevState.countdownNumber - 1;
@@ -61,14 +66,18 @@ class LaunchPageComponent extends Component {
               this.setState({
                 countdownActive: false,
                 countdownNumber: null,
+                animationKey: 0,
               });
             }, 1000);
-          }, 300);
+          }, 700);
           return { countdownNumber: null };
         }
-        return { countdownNumber: nextNumber };
+        return {
+          countdownNumber: nextNumber,
+          animationKey: prevState.animationKey + 1,
+        };
       });
-    }, 800);
+    }, 1400); // Matches animation duration
   };
 
   render() {
@@ -80,15 +89,37 @@ class LaunchPageComponent extends Component {
             src="black-gradient.png"
             alt=""
           />
-          <p className="LaunchPageMainContentTitle">
+          <p
+            className={`LaunchPageMainContentTitle ${
+              this.state.countdownActive
+                ? "launch-sequence-hidden"
+                : "launch-sequence-visible"
+            }`}
+          >
             Reach out. We like talking shop on big problems.
           </p>
-          <p className="LaunchPageMainContentText TitleText">
+          <p
+            className={`LaunchPageMainContentText TitleText ${
+              this.state.countdownActive && this.state.countdownNumber !== null
+                ? "countdown-active"
+                : ""
+            }`}
+            key={this.state.animationKey}
+          >
             {this.state.countdownActive && this.state.countdownNumber !== null
               ? this.state.countdownNumber
+              : this.state.countdownActive
+              ? "."
               : "Ready for launch"}
           </p>
-          <div className="ContentScroller" onClick={this.handleInitiateClick}>
+          <div
+            className={`ContentScroller ${
+              this.state.countdownActive
+                ? "launch-sequence-hidden"
+                : "launch-sequence-visible"
+            }`}
+            onClick={this.handleInitiateClick}
+          >
             <p className="ContentScrollerTitle">{"INITIATE"}</p>
             <img
               className="ContentScrollerImage"
@@ -97,9 +128,15 @@ class LaunchPageComponent extends Component {
             />
           </div>
           {this.props.launched ? (
-            <div className="LaunchedEmail">
+            <div
+              className={`LaunchedEmail ${
+                this.state.countdownActive
+                  ? "launch-sequence-hidden"
+                  : "launch-sequence-visible"
+              }`}
+            >
               <p>
-                You can also email us at{" "}
+                If your browser blocked the email window, you can email us at{" "}
                 <a
                   href="mailto:launch@sierraspaceagency.com"
                   className="LaunchedEmailLink"
